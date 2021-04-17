@@ -38,6 +38,20 @@ const depositCashToUser = (req, res) => {
             fs.writeFileSync('users.json', JSON.stringify(bankUsers));
             res.status(200).json({status: "transfer completed"})
         }
+};
+
+const creditUpdate = (req, res) => {
+    const {id} = req.params;
+    const {setNewCredit} = req.body;
+    const checkuser = bankUsers.users.find(i => i.id == id );
+        if(!setNewCredit || setNewCredit < 0 || !checkuser){
+            return res.json("wrong input, the update failed")  
+        }
+        else {
+            checkuser.credit += setNewCredit;
+            fs.writeFileSync('users.json', JSON.stringify(bankUsers));
+            res.status(200).json({status: "new credit set completed"}) 
+        }
 }
 
 
@@ -45,5 +59,6 @@ module.exports = {
     allBankUsers,
     newUser,
     depositCashToUser,
+    creditUpdate,
 
 };
