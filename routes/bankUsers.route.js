@@ -6,6 +6,6 @@ router
 .get("/", bankUsersController.allBankUsers)
 .post("/", bankUsersController.newUser)
 .put("/deposit/:id", bankUsersController.depositCashToUser)
-.put("/setnewcredit/:id", bankUsersController.creditUpdate);
-
+.put("/setnewcredit/:id", bankUsersController.creditUpdate)
+.put("/withdraw/:id", bankUsersController.withdrawMoney)
 module.exports = router;

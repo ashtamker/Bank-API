@@ -1,7 +1,1 @@
-{"users":[{"id":123456789,"cash":2000,"credit":1500,"isActive":true},
-    {"id":987654321,"cash":600,"credit":300,"isActive":true},
-    {"id":147852369,"cash":800,"credit":1000,"isActive":true},
-    {"id":456789321,"cash":400,"credit":0,"isActive":true},
-    {"id":141405235,"cash":1000,"credit":600,"isActive":false},
-    {"id":565656566,"cash":400,"credit":500},
-    {"id":565656568,"cash":0,"credit":0,"isActive":true}]}
+{"users":[{"id":123456789,"cash":2000,"credit":1500,"isActive":true},{"id":987654321,"cash":600,"credit":300,"isActive":true},{"id":147852369,"cash":800,"credit":1000,"isActive":true},{"id":456789321,"cash":400,"credit":0,"isActive":true},{"id":141405235,"cash":1000,"credit":600,"isActive":false},{"id":565656566,"cash":300,"credit":2000},{"id":565656568,"cash":0,"credit":0,"isActive":true}]}
